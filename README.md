@@ -1,6 +1,6 @@
 # TrabajoIntegrador
 Trabajo Integrador diseño web Comisión 184 - Grupo 3.
-Integrantes: Marini Mariela, Marquez Ana, Viviana, Manresa Mauricio, Sergio, Mourad Adrian.
+Integrantes: Marini Mariela, Marquez Ana, Juarez Viviana, Manresa Mauricio, Echevarne Sergio, Mourad Adrian.
 
 Nuestra landing page, está enfocada a la promoción de servicios de un gimnasio. Los recursos utilizados por el equipo de desarrollo son HTML 5, CSS y javascript,
 hemos incorporando diversos estilos aplicados en nuestro archivo .ccs, formulario de contacto con validación de campos obligatorios y exportación del mismo a formato PDF,
