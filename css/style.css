@@ -75,11 +75,32 @@ body {
     }
 
     .texto-1 {
-        margin-bottom: 0.6em;
-        font-size: 50%;
+        margin-left: 8.7rem;
+        font-size: 80%;
         color:#333;
 
     }
+
+    .texto-copywrite {
+        
+        font-size: 75%;
+        color : #fefefe;
+
+    }
+
+    
+    .texto-boton-massn {
+        padding: auto;
+        font-size: 80px;
+        color : #fefefe;
+        font-weight: 2500;
+    }
+
+
+    .texto-333{
+        font-size: 25px;
+    }
+    
 
     
 
@@ -110,12 +131,13 @@ body {
         
     .btn-active:active {
         background-color: #cc0404;
-        box-shadow: 0 5px #666;
+        box-shadow: 0 0.5em #666;
         transform: translateY(4px);
         color: #FFF;
     }
 
-
+     
+   
 /* Main  */
    
     .slider {
@@ -174,24 +196,31 @@ body {
 
     .titulo {
         color: #5d0404;
+        font-size: 60px;
     }
     
     .container-imagenes-index {
         display: inline-block;
-        padding: 5px;
+        /*padding: 5px;*/
         box-sizing: border-box;
+        object-fit: cover;
+        filter: grayscale(100%);
        
     }
 
 
+    .container-imagenes-index:hover{
+        filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+        transition: 3s;
+    }
      
 
   
        
     .imagen-hover-gris:hover{
          
-        filter: grayscale(80%);
-
+        filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+        transition: 3s;
         
     }
 
@@ -201,28 +230,41 @@ body {
     }
    
     .img-borde-izquierdo-curvo-index{
-        object-fit: cover;
+        
         width:80%;
         height:70%;
         border-top-left-radius: 260px 200px;
         filter: drop-shadow(20px  20px 20px #333 );
+        margin-right: 1rem;
+        float: right;
+        object-fit: cover;
+        margin-left: 4rem;
     }
  
     .img-borde-derecho-curvo-index{
-        object-fit: cover;
+        
         width:80%;
         height:70%;
         border-top-right-radius: 260px 200px;
         filter: drop-shadow(20px  20px 20px #333 );
+        margin-right: 1rem;
+        float: right;
+        object-fit: cover;
+        margin-left: 4rem;
     }
 
 
     .img-rectangular-bordes-redondeados {
-        object-fit: cover;
+        
+       
         width:80%;
         height:70%;
         border-radius: 35px;
         filter: drop-shadow(20px  20px 20px #333 );
+        /*margin-right: 1rem;*/
+        /*float: right;*/
+        object-fit: cover;
+        /*margin-left: 2rem;*/
 
     }
 
@@ -243,15 +285,15 @@ body {
 
    /* Formulario de Contacto  */
    #contacto{
-        background: rgb(251,248,248);
-        background: linear-gradient(0deg, rgba(251,248,248,1) 0%, rgba(245,5,5,1) 100%);
+        background: linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
     }
 
    .conta{
-        margin-left: 8rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 60px;
-        color: #FFF;
+    margin-left: 16.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
     }
 
    .refe{
@@ -266,10 +308,10 @@ body {
     
 
     .ingresos{
-        margin-left: 12.5em;
+        margin-left: 7em;
         padding: 0.3125em;
         border-radius: 0.625em;
-        background-color: rgb(249, 212, 198);
+        background-color: #f9d4c6;
         margin-bottom: 1.875em;
         box-shadow: 8px 8px 13px #333;
         cursor: pointer;
@@ -279,7 +321,7 @@ body {
     /* estilo campo comentario */
   
     .ingreso1{
-        margin-left: 12.5em;
+        margin-left: 7em;
         padding: 0.3125em;
         border-radius: 0.625em;
         background-color: rgb(249, 212, 198);
@@ -287,6 +329,14 @@ body {
         cursor: pointer;
     }
 
+
+    .conta{
+        margin-left: 16.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+    }
 
     .ingresos:hover{
         box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
@@ -308,10 +358,11 @@ body {
         font-size: 30px;
         font-weight: bold;
         color: #fff;
+        margin-left: 8.5rem;
     }
 
     .envio-margin-left{
-        margin-left: 1100px;
+        margin-left: 840px;
        
     }
     
@@ -332,7 +383,7 @@ body {
     #plan-1 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: black;
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -340,7 +391,7 @@ body {
     #plan-2 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: rgb(92, 2, 2);
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -348,7 +399,7 @@ body {
     #plan-3 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: rgb(227, 19, 130);
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -423,6 +474,43 @@ body {
      /* fin control formulario de dos pasos */
      
      
+    /*Asociarse*/
+    #asociarse{
+        padding-bottom: 7px;
+    }
+
+
+    
+    .gymasociarse{
+        padding: 10px;
+        object-fit: cover;
+        width: 210px;
+        height:265px;
+        border-radius: 20px;
+        filter: drop-shadow(10px  10px 10px #333 );
+    }
+    
+    .texto-impact {
+        font-family:Impact;
+        /*font:bold;*/
+        font-style: oblique;
+        color: #1d1b1b;
+        letter-spacing: 0.15em;
+        /*float: left;*/
+        
+    }
+
+    .texto-impact-titulo-plan {
+
+        font-size: 40px;
+    }
+
+    .texto-impact-descripcion-plan {
+
+        font-size: 20px;
+    }
+
+     /* Fin asociarse */
      
   
 /* FOOTER */
