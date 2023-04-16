@@ -75,7 +75,8 @@ body {
 
 .titulo-fondo {
     background-color:  #C60808;
-    height: 8rem;
+    height: 9rem;
+    padding-top: 1rem;
 }
 
 .titulo-fondo-color-blanco {
