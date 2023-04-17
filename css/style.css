@@ -61,10 +61,22 @@ body {
     color:#fefefe;
 }
 
-.texto-1 {
-    margin-left: 8.7rem;
+.texto-contacto-1 {
+    margin-left: 8.5rem;
     font-size: 80%;
     color: #fefefe;
+    text-align: left;
+}
+
+.texto-step1-1 {
+    
+    font-size: 80%;
+    color: #333;
+    text-align: left;
+}
+
+.texto-margin-step1-1 {
+    margin-left: 17rem;
 }
 
 .texto-copywrite {
@@ -315,11 +327,6 @@ body {
     margin-left: 479px;
 }
 
-.aNosotros{
-    margin-left: 8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
 
 .ancla  {
     padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
@@ -354,11 +361,15 @@ body {
 }
 
 #step-1 {
+
+
+
     border:3px solid orange;
     border-radius: 22px;
     background-color:  rgba(63, 61, 61, 0.15);
-    text-align: center;
+    text-align: center; 
     color:antiquewhite;
+
 }
 
 #summary {
@@ -433,11 +444,22 @@ form {
     font-size: 20px;
 }
 
-#plan-3-titulo{
-    color: black;
-    font-size: 20px;
+#plan-seleccionado-step1{
+    color:  #333;
+    font-size: 15px;
     font-weight: bold;
 }
+
+
+#plan-seleccionado-label{
+    color: #333;
+    font-size: 7px;
+    font-weight: bold;
+}
+.texto-impact-seleccionado-label {
+    font-size: 25px;
+}
+
 /* Fin asociarse */
 
 /* FOOTER */
