@@ -128,7 +128,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 90000;
         descuentoPlan = 30;
-        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
+        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
          
 
    };
@@ -137,7 +137,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 150000;
         descuentoPlan = 10;
-        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
+        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
          
 
    };
@@ -146,7 +146,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 110000;
         descuentoPlan = 5;
-        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
+        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
          
 
    };
@@ -243,11 +243,11 @@ function validoFrmContacto() {
         
         resultado = "ERR";
         
-    } else  if (frmContacto.apellido.value == "") {
+    /*} else  if (frmContacto.apellido.value == "") {
         frmContacto.apellido.style.backgroundColor = "#f89696";
         alert("Complete el campo apellido");
         resultado = "ERR";
-
+    */ 
     } else if (frmContacto.edad.value == "") {
         frmContacto.edad.style.backgroundColor = "#f89696";
         alert("Complete el campo edad");
@@ -311,7 +311,9 @@ function crearPDF()
     segundos = date.getSeconds();
     milisegundos = date.getMilliseconds();
 
-
+    if (apellido =="") {
+        apellido = "No especificado";
+    }
     
     
     var doc = new jsPDF();
@@ -332,6 +334,11 @@ function crearPDF()
     doc.text(20,y = y + 10,"Comentario   : " + comentario);
     doc.text(0,y = y + 10,"_________________________________________________________________________________");
     doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
+
+    if (apellido =="No especificado") {
+        apellido = "";
+    }
+    
 
     doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
  
