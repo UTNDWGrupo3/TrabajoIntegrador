@@ -256,10 +256,11 @@ function validoFrmContacto() {
         frmContacto.email.style.backgroundColor = "#f89696";
         alert("Complete el campo email");
         resultado = "ERR";
-    } else  if (frmContacto.telefono.value == "") {
+    /*} else  if (frmContacto.telefono.value == "") {
         frmContacto.telefono.style.backgroundColor = "#f89696";
         alert("Complete el campo telefono");
         resultado = "ERR";    
+    */    
     } else if (frmContacto.comentario.value == "") {
 
         frmContacto.comentario.style.backgroundColor = "#f89696";
@@ -313,6 +314,11 @@ function crearPDF()
 
     if (apellido =="") {
         apellido = "No especificado";
+    }
+    
+
+    if (telefono =="") {
+        telefono = "No especificado";
     }
     
     
