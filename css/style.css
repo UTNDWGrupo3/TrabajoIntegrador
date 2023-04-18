@@ -12,9 +12,16 @@
     src: url('./fonts/FasterOne-Regular.ttf');
 }
 
-.nombrefasterOne{
+.nombrefasterOne-70{
     font-family: 'Faster One', cursive;
     font-size: 70px;
+    margin-left: 40px;
+}
+
+
+.nombrefasterOne-40{
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
     margin-left: 40px;
 }
 
