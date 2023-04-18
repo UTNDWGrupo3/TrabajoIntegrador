@@ -162,7 +162,7 @@ body {
 
 /* Ajusto el tamaño de las imagenes dentro del contenero padre */
 .slider img {          
-   width: 100%;
+    width: 100%;
     height: 500px;
     object-fit: cover;    /* la imagen se ajusta al tamaño del padre */
 }
@@ -228,7 +228,7 @@ body {
     object-fit: cover;
     margin-left: 4rem;
 }
- 
+
 .img-borde-derecho-curvo-index{
     width:80%;
     height:70%;
@@ -313,12 +313,12 @@ body {
 }
 
 .ingresos:hover{
-    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    box-shadow: 8px 8px 13px rgb(0, 0, 0, 0.3);  
     transition: box-shadow 0.3s ease;
 }
 
 .ingreso1:hover{
-    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    box-shadow: 8px 8px 13px rgb(0, 0, 0, 0.3);  
     transition: box-shadow 0.3s ease;
 }
 
@@ -332,12 +332,13 @@ body {
 
 .envio-margin-left{
     margin-left: 479px;
-}
+    filter: drop-shadow(8px 8px 13px #333 );
 
+}
 
 .ancla  {
     padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
-    }
+}
 
 #plan-1 {
     border:3px solid orange;
@@ -368,15 +369,11 @@ body {
 }
 
 #step-1 {
-
-
-
     border:3px solid orange;
     border-radius: 22px;
     background-color:  rgba(63, 61, 61, 0.15);
     text-align: center; 
     color:antiquewhite;
-
 }
 
 #summary {

@@ -272,37 +272,32 @@
               </form>        
             </div>
           </div>  
-            <!-- Formulario dos pasos-->
-            <br> 
-            <div class="row">
-              
-              <form  id="step-1">
-                
-                <div class="col-12 sombra-planes">
-                    <br>
-                    <div id="plan-seleccionado-step1">Plan seleccionado <i><label class="texto-impact texto-impact-seleccionado-label" id="lbl-plan-coti" ></label></i> para cotizar el plan, por favor complete los siguientes datos</div>
-                      <br>
-                      <label class="texto-step1-1" id="lbl-nombre" >Nombre:</label>
-                      <input class="input-cotizacion" type="text" id="name-coti" name="name-coti" placeholder="Ingresa tu nombre"><h7 style="color: #333"></style>*</h7>  
-                      <label class="texto-step1-1" id="lbl-email" >Email:</label>
-                      <input  class="input-cotizacion" type="email" id="email-coti" name="email-coti" placeholder="Ingresa tu email"><h7 style="color: #333"></style>*</h7>  
-                      <button class="btn btn-hover btn-active btn-danger" type="button" id="next-btn-coti" >Cotizar</button>
-                      <div class="texto-step1-1 texto-margin-step1-1">* campos obligatorios</div>
-                      
-                      <br>
-                      
-                </div>  
-              </form>                            
-            </div>  
+          <!-- Formulario dos pasos-->
+          <br> 
+          <div class="row">
+            <form id="step-1">
+              <div class="col-12 sombra-planes">
+                <br>
+                <div id="plan-seleccionado-step1">Plan seleccionado <i><label class="texto-impact texto-impact-seleccionado-label" id="lbl-plan-coti" ></label></i> para cotizar el plan, por favor complete los siguientes datos</div>
+                <br>
+                <label class="texto-step1-1" id="lbl-nombre" >Nombre:</label>
+                <input class="input-cotizacion" type="text" id="name-coti" name="name-coti" placeholder="Ingresa tu nombre"><h7 style="color: #333"></style>*</h7>  
+                <label class="texto-step1-1" id="lbl-email" >Email:</label>
+                <input  class="input-cotizacion" type="email" id="email-coti" name="email-coti" placeholder="Ingresa tu email"><h7 style="color: #333"></style>*</h7>  
+                <button class="btn btn-hover btn-active btn-danger" type="button" id="next-btn-coti" >Cotizar</button>
+                <div class="texto-step1-1 texto-margin-step1-1">* Campos Obligatorios.</div>
+                <br>
+              </div>  
+            </form>  
             <div class="row">
               <div class="col">
                 <form class="step-2"  id="step-2">
                   <div class="sombra-planes summary">
                     <p class="texto-p-333"> <b> Cotización del plan: </b> </p>
-                      <div class="plan-seleccionado-step1" id="summary">  </div>
-                        <button class="btn btn-hover btn-active envio-cotizacion-pdf-margin-left btn-danger" type="button" id="next-btn-coti" >Exportar a PDF</button>
+                    <div class="plan-seleccionado-step1" id="summary"></div>
+                    <button class="btn btn-hover btn-active envio-cotizacion-pdf-margin-left btn-danger" type="button" id="next-btn-coti" >Exportar a PDF</button>
                   </div>
-                </form>  
+                </form>
               </div>
             </div> 
             <!-- Fin fomrulario dos pasos-->
@@ -321,19 +316,15 @@
               <br>
               <div class="refe">
                 <input class="ingresos" type="name" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> <h7 style="color: #fff">*</style> </h7>     
-
                 <input class="ingresos" type="name" id="apellido" name="apellido" placeholder="Ingresa tu apellido"> 
-
                 <input class="ingresos" type="number" id="edad" name="edad" placeholder="Ingresa tu edad"> <h7 style="color: #fff">*</style> </h7>     
-
                 <input class="ingresos" type="email" id="email" name="email" placeholder="Ingresa tu email"> <h7 style="color: #fff">*</style> </h7>     
-
                 <input class="ingresos" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">  
                 <br>
                 <br>
                 <p class="texto-contacto">Contanos qué clases o ejercicios te interesan:</p>
                 <textarea class="ingreso1" id ="comentario" name="comentario" cols="59" rows="4" placeholder="Comentarios"></textarea> <h7 style="color: #fff">*</style> </h7> 
-                <p class="texto-contacto-1">* campos obligatorios</p>
+                <p class="texto-contacto-1">* Campos Obligatorios</p>
                 <button class="btn btn-hover btn-active btn-danger envio-margin-left " type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
               </div>
             </div>       
@@ -343,7 +334,7 @@
         <br>
       </section>
     </main>
-          
+    
     <!-- Footer-->
     <footer class="footer">
       <div class="container">
