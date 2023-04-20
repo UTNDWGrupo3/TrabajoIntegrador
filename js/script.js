@@ -19,7 +19,7 @@ const step2 = document.querySelector("#step-2");
 const summary = document.querySelector("#summary");
 
 
-
+let clic = 1;
 
 
 
@@ -128,7 +128,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 90000;
         descuentoPlan = 30;
-        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
+        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
          
 
    };
@@ -137,7 +137,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 150000;
         descuentoPlan = 10;
-        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
+        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
          
 
    };
@@ -146,7 +146,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
    {  
         valorPlan = 110000;
         descuentoPlan = 5;
-        precioFinalPlan =  valorPlan - (valorPlan * descuentoPlan/100);
+        precioFinalPlan =  valorPlan - (valorPlan * (descuentoPlan/100));
          
 
    };
@@ -239,19 +239,18 @@ function validoFrmContacto() {
     if (frmContacto.nombre.value == "") {
         frmContacto.nombre.style.backgroundColor = "#f89696";
         alert("Complete el campo nombre");
-        
-        
         resultado = "ERR";
-        
-    /*} else  if (frmContacto.apellido.value == "") {
+   /*     
+    } else  if (frmContacto.apellido.value == "") {
         frmContacto.apellido.style.backgroundColor = "#f89696";
         alert("Complete el campo apellido");
         resultado = "ERR";
-    */ 
+  */
     } else if (frmContacto.edad.value == "") {
         frmContacto.edad.style.backgroundColor = "#f89696";
         alert("Complete el campo edad");
         resultado = "ERR";
+       
     } else  if (frmContacto.email.value == "") {
         frmContacto.email.style.backgroundColor = "#f89696";
         alert("Complete el campo email");
@@ -259,8 +258,7 @@ function validoFrmContacto() {
     /*} else  if (frmContacto.telefono.value == "") {
         frmContacto.telefono.style.backgroundColor = "#f89696";
         alert("Complete el campo telefono");
-        resultado = "ERR";    
-    */    
+        resultado = "ERR";    */
     } else if (frmContacto.comentario.value == "") {
 
         frmContacto.comentario.style.backgroundColor = "#f89696";
@@ -312,16 +310,16 @@ function crearPDF()
     segundos = date.getSeconds();
     milisegundos = date.getMilliseconds();
 
+
     if (apellido =="") {
         apellido = "No especificado";
     }
-    
-
+     
     if (telefono =="") {
         telefono = "No especificado";
     }
     
-    
+
     var doc = new jsPDF();
     
     let y = 10;
@@ -398,4 +396,29 @@ function crearPDFCotizacion()
 
     doc.save('Cotizacion'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
  
+};
+
+
+function staffMostrar() {
+     
+   
+    /*if (document.getElementById("btnMasAcercaNosotros").textContent = "Más acerca de nosotros")*/
+    if (clic == 1 ) 
+    {
+        
+        document.getElementById("staff").style.display = "block"; 
+        document.getElementById("btnMasAcercaNosotros").innerHTML = "Menos acerca de nosotros";
+        clic += 1;
+    } else {
+        
+        document.getElementById("staff").style.display = "none"; 
+        
+        document.getElementById("btnMasAcercaNosotros").innerHTML = "Más acerca de nosotros";
+        clic = 1;
+
+    }    
+
+   
+
+
 };
